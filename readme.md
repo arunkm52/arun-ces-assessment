@@ -1,6 +1,6 @@
 # CES Assessment Completed By Arun
 
-This Project contains the solution for the question asked in the CES assessment. Solution  is completed in JS, Cypress tech stack. Currently only page object model, reporting features are included for this assessment. Upon request, other features like multiple environment configuration, selective test runs can be included. Please follow the below steps to set up this solution in your local.
+This Project contains the solution for the question asked in the CES assessment. Solution  is completed in JS, Cypress tech stack. Currently only page object model, reporting, multiple environment selection features are included for this assessment. Upon request, other features like selective test runs, parallel exectuions can be made configurable. Please follow the below steps to set up this solution in your local.
 
 ## Pre-Requisites
 
@@ -25,4 +25,3 @@ This Project contains the solution for the question asked in the CES assessment.
 7. You can see the test results on the window.
 8. Screenshots are available with Cypress time travel option.
 9. If html report needs to be generated, please run the command ```node index.js```
-

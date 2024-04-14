@@ -5,7 +5,6 @@ Feature: Forgot Password Scenarios
         Then Login page should be displayed with CDS logo
         When user click on the Forgot Password link
         Then Forgot password section should be displayed
-        And user verify the forgot password section
 
     Scenario: Forgot Password Success Flow
         When user enters the email id "abcd@gmail.com"

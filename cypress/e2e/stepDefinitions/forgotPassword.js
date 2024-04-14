@@ -1,10 +1,11 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import { loginPage } from "../../pageObjects/loginPage";
+var { applicationBaseUrl } = require("../../setup/dataSetup");
 
 
 When('user launch the Login page', () => {
 
-    cy.visit("https://membersvic.returnit.com.au/");
+    cy.visit(applicationBaseUrl);
 })
 
 Then('Login page should be displayed with CDS logo', () => {
@@ -21,10 +22,6 @@ Then('Forgot password section should be displayed', () => {
 
     loginPage.verifyForgotPasswordHeadingDisplayed();
     loginPage.verifyForgotPasswordDescriptionDisplayed();
-})
-
-And('user verify the forgot password section', () => {
-
 })
 
 When('user enters the email id {string}', (inputEmail) => {
